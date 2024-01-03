@@ -47,7 +47,7 @@ jsonschema==4.19.2
 jsonschema-specifications==2023.7.1
 kubernetes==28.1.0
 langchain==0.0.353
-langsmith==0.0.57
+langsmith==0.0.75
 loguru==0.7.2
 markdown-it-py==3.0.0
 MarkupSafe==2.1.3
