@@ -40,7 +40,7 @@ class ComcastAgent:
 
         # This is needed for both the memory and the prompt
         memory_key = "history"
-        memory = AgentTokenBufferMemory(memory_key=memory_key, llm=llm,chat_memory=msgs, max_token_limit=10000)
+        memory = AgentTokenBufferMemory(memory_key=memory_key, llm=llm,chat_memory=msgs, max_token_limit=7500)
         system_message = SystemMessage(
             content=(
                  """
