@@ -25,7 +25,7 @@ pinecone_key = st.secrets["pinecone_key"]
 pinecone.init(api_key= pinecone_key, environment="gcp-starter")
 embed = OpenAIEmbeddings(openai_api_key= openai_key)
 db = Pinecone.from_existing_index("comcast", embed)
-llm = ChatOpenAI(openai_api_key= openai_key,model="gpt-4")
+llm = ChatOpenAI(openai_api_key= openai_key,model="gpt-4-0125-preview")
 retriever = db.as_retriever()
 
 class ComcastAgent:
